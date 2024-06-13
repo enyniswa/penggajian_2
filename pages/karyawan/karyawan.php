@@ -60,11 +60,11 @@ include "database/connection.php";
                             <?php echo $row["nama_bagian"] ?>
                         </td>
                         <td>
-                            <a href="?page=karyawanubah&id=<?php echo $row["nik"] ?>" class="btn btn-primary">
+                            <a href="?page=karyawanubah&nik=<?php echo $row["nik"] ?>" class="btn btn-primary">
                                 <i class="fa fa-edit"></i>
                                 Ubah
                             </a>
-                            <a href="?page=karyawanhapus&id=<?php echo $row["nik"] ?>"
+                            <a href="?page=karyawanhapus&nik=<?php echo $row["nik"] ?>"
                                 onclick="javascript: return confirm('Konfirmasi data akan dihapus?');" class="btn btn-danger">
                                 <i class="fa fa-trash"></i>
                                 Hapus
